@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Soft peachy cream and cyan palette */
-    --background: 28 62% 95%;
+    --background: 20 11% 94%;
     --foreground: 180 10% 20%;
 
     --card: 28 55% 92%;
