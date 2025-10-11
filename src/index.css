@@ -18,12 +18,12 @@ All colors MUST be HSL.
     --popover: 28 55% 92%;
     --popover-foreground: 180 10% 20%;
 
-    /* Peachy cream primary */
-    --primary: 28 62% 79%;
+    /* Light cyan primary */
+    --primary: 180 42% 75%;
     --primary-foreground: 180 10% 20%;
 
-    /* Light cyan secondary */
-    --secondary: 180 42% 85%;
+    /* Peachy tan secondary */
+    --secondary: 28 62% 79%;
     --secondary-foreground: 180 10% 25%;
 
     /* Muted peachy tones */
@@ -70,10 +70,10 @@ All colors MUST be HSL.
     --popover: 180 12% 15%;
     --popover-foreground: 28 50% 90%;
 
-    --primary: 28 55% 70%;
+    --primary: 180 38% 50%;
     --primary-foreground: 180 15% 12%;
 
-    --secondary: 180 35% 30%;
+    --secondary: 28 55% 70%;
     --secondary-foreground: 28 50% 90%;
 
     --muted: 180 10% 20%;
