@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Soft peachy cream and cyan palette */
-    --background: 20 11% 94%;
+    --background: 28 62% 95%;
     --foreground: 180 10% 20%;
 
     --card: 28 55% 92%;
@@ -18,12 +18,12 @@ All colors MUST be HSL.
     --popover: 28 55% 92%;
     --popover-foreground: 180 10% 20%;
 
-    /* Light cyan primary */
-    --primary: 180 42% 75%;
+    /* Peachy cream primary */
+    --primary: 28 62% 79%;
     --primary-foreground: 180 10% 20%;
 
-    /* Peachy tan secondary */
-    --secondary: 28 62% 79%;
+    /* Light cyan secondary */
+    --secondary: 180 42% 85%;
     --secondary-foreground: 180 10% 25%;
 
     /* Muted peachy tones */
@@ -70,10 +70,10 @@ All colors MUST be HSL.
     --popover: 180 12% 15%;
     --popover-foreground: 28 50% 90%;
 
-    --primary: 180 38% 50%;
+    --primary: 28 55% 70%;
     --primary-foreground: 180 15% 12%;
 
-    --secondary: 28 55% 70%;
+    --secondary: 180 35% 30%;
     --secondary-foreground: 28 50% 90%;
 
     --muted: 180 10% 20%;
