@@ -12,9 +12,10 @@ const Home = () => {
           <div className="space-y-6">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
               Engineer turned data storyteller exploring the world
+              Exploring the world and turning curiosity into creation.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              I connect people through ideas, data, and adventures. This is where I share what makes me curious.
+              A space where I share my journey, from projects and ideas to travels and hobbies.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Button asChild size="lg" className="rounded-full">
