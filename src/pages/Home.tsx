@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Globe, BookOpen, Code } from "lucide-react";
+import { ArrowRight, User, BookOpen, Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import joseHero from "@/assets/jose-hero.jpg";
 
@@ -45,17 +45,17 @@ const Home = () => {
       {/* Quick Links Section */}
       <section className="grid gap-6 md:grid-cols-3">
         <Link 
-          to="/blog" 
+          to="/about" 
           className="group relative overflow-hidden rounded-2xl bg-card p-8 shadow-sm transition-all hover:shadow-xl border border-border"
         >
           <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl transition-all group-hover:bg-primary/10" />
-          <Globe className="h-10 w-10 mb-4 text-primary" />
-          <h3 className="font-serif text-2xl font-semibold mb-2 text-foreground">Travel Stories</h3>
+          <User className="h-10 w-10 mb-4 text-primary" />
+          <h3 className="font-serif text-2xl font-semibold mb-2 text-foreground">About Me</h3>
           <p className="text-muted-foreground mb-4">
-            Adventures and lessons from places I've explored around the world
+            Learn about my background, places I've lived, and the journey that shaped who I am
           </p>
           <span className="text-primary font-medium inline-flex items-center group-hover:gap-2 transition-all">
-            Explore <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            Learn More <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
           </span>
         </Link>
 
@@ -65,9 +65,9 @@ const Home = () => {
         >
           <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-2xl transition-all group-hover:bg-accent/10" />
           <BookOpen className="h-10 w-10 mb-4 text-accent" />
-          <h3 className="font-serif text-2xl font-semibold mb-2 text-foreground">Thoughts & Ideas</h3>
+          <h3 className="font-serif text-2xl font-semibold mb-2 text-foreground">Blog</h3>
           <p className="text-muted-foreground mb-4">
-            Reflections on books, hobbies, and lessons that shape how I see the world
+            Travel stories, reflections on books, and thoughts on the things that shape how I see the world
           </p>
           <span className="text-primary font-medium inline-flex items-center group-hover:gap-2 transition-all">
             Read More <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
