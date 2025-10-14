@@ -83,7 +83,7 @@ const Home = () => {
           <Code className="h-10 w-10 mb-4 text-primary" />
           <h3 className="font-serif text-2xl font-semibold mb-2 text-foreground">Projects</h3>
           <p className="text-muted-foreground mb-4">
-            Data-driven work combining storytelling, analysis, and meaningful impact
+            Projects, websites, and tools I created to fulfill a need.
           </p>
           <span className="text-primary font-medium inline-flex items-center group-hover:gap-2 transition-all">
             View Work <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
