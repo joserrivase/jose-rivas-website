@@ -1,7 +1,11 @@
 import { useParams, Link } from "react-router-dom";
-import { Calendar, Clock, ArrowLeft } from "lucide-react";
+import { Calendar, Clock, ArrowLeft, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
+import { Textarea } from "@/components/ui/textarea";
+import { Input } from "@/components/ui/input";
+import { useState } from "react";
 
 const blogPosts = [
   {
@@ -177,6 +181,8 @@ const blogPosts = [
 const BlogPost = () => {
   const { id } = useParams();
   const post = blogPosts.find(p => p.id === Number(id));
+  const [comments, setComments] = useState<Array<{ name: string; comment: string; date: string }>>([]);
+  const [newComment, setNewComment] = useState({ name: "", comment: "" });
 
   if (!post) {
     return (
@@ -212,6 +218,9 @@ const BlogPost = () => {
         <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4 text-foreground">
           {post.title}
         </h1>
+        <p className="text-lg text-muted-foreground mb-2">
+          Written by <span className="font-semibold text-foreground">Jose Rivas</span>
+        </p>
         <p className="text-xl text-muted-foreground mb-6">
           {post.excerpt}
         </p>
@@ -236,6 +245,71 @@ const BlogPost = () => {
           prose-a:text-primary hover:prose-a:underline"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
+
+      {/* Comments Section */}
+      <div className="mt-16 pt-8 border-t border-border">
+        <h2 className="font-serif text-3xl font-bold mb-8 flex items-center gap-2">
+          <MessageSquare className="h-8 w-8" />
+          Comments
+        </h2>
+
+        {/* Comment Form */}
+        <Card className="p-6 mb-8">
+          <h3 className="font-semibold text-lg mb-4">Leave a Comment</h3>
+          <div className="space-y-4">
+            <div>
+              <Input
+                placeholder="Your name"
+                value={newComment.name}
+                onChange={(e) => setNewComment({ ...newComment, name: e.target.value })}
+              />
+            </div>
+            <div>
+              <Textarea
+                placeholder="Your comment..."
+                value={newComment.comment}
+                onChange={(e) => setNewComment({ ...newComment, comment: e.target.value })}
+                rows={4}
+              />
+            </div>
+            <Button
+              onClick={() => {
+                if (newComment.name.trim() && newComment.comment.trim()) {
+                  setComments([
+                    ...comments,
+                    {
+                      ...newComment,
+                      date: new Date().toLocaleDateString("en-US", {
+                        month: "long",
+                        day: "numeric",
+                        year: "numeric",
+                      }),
+                    },
+                  ]);
+                  setNewComment({ name: "", comment: "" });
+                }
+              }}
+            >
+              Post Comment
+            </Button>
+          </div>
+        </Card>
+
+        {/* Comments List */}
+        {comments.length > 0 && (
+          <div className="space-y-4">
+            {comments.map((comment, index) => (
+              <Card key={index} className="p-6">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="font-semibold">{comment.name}</span>
+                  <span className="text-sm text-muted-foreground">{comment.date}</span>
+                </div>
+                <p className="text-muted-foreground">{comment.comment}</p>
+              </Card>
+            ))}
+          </div>
+        )}
+      </div>
 
       {/* Back to Blog */}
       <div className="mt-16 pt-8 border-t border-border">
