@@ -3,16 +3,25 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const About = () => {
   const places = [
-    { city: "San Francisco", country: "USA", period: "2018-Present" },
-    { city: "Madrid", country: "Spain", period: "2015-2018" },
-    { city: "Mexico City", country: "Mexico", period: "Born & Raised" },
+    { city: "Provo, Utah", country: "USA", period: "1999 - 2000" },
+    { city: "San Jose, California", country: "USA", period: "2000-2001" },
+    { city: "Orlando, Florida", country: "USA", period: "2001 - 2005" },
+    { city: "Margarita", country: "Venezuela", period: "2005 - 2012" },
+    { city: "Orlando, Florida", country: "USA", period: "2012 - 2018" },
+    { city: "Gainesville, Florida", country: "USA", period: "2018 - 2022" },
+    { city: "Seattle, Washington", country: "USA", period: "2022 - 2024" },
+    { city: "Abroad", country: "World", period: "2024-2024" },
+    { city: "Orlando, Florida", country: "USA", period: "2024 - Present" },
   ];
 
   const travels = [
-    "Japan", "Thailand", "Vietnam", "Indonesia",
-    "Portugal", "Italy", "France", "Germany",
-    "Peru", "Colombia", "Argentina", "Brazil",
-    "Morocco", "Egypt", "South Africa"
+    "United States", "Venezuela", "Costa Rica", "Panama",
+    "Belgium", "Italy", "Vatican City", "Austria",
+    "Canada", "Spain", "Portugal", "Morocco",
+    "France", "Monaco", "United Kingdom,", "Thailand", 
+    "Laos", "Cambodia", "Phillipines", "Vietnam", "Indonesia", 
+    "Malaysia", "Sri Lanka", "Turkey", "Mexico", "Guatemala", 
+    "Nicaragua", "Puerto Rico"
   ];
 
   const books = [
