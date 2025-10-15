@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock } from "lucide-react";
@@ -96,36 +97,35 @@ const Blog = () => {
       {/* Blog Posts Grid */}
       <div className="grid gap-8 md:grid-cols-2">
         {filteredPosts.map((post) => (
-          <Card 
-            key={post.id} 
-            className="group cursor-pointer transition-all hover:shadow-lg border-border overflow-hidden"
-          >
-            <CardHeader>
-              <div className="mb-3">
-                <Badge variant="secondary" className="font-normal">
-                  {post.category}
-                </Badge>
-              </div>
-              <h3 className="font-serif text-2xl font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
-                {post.title}
-              </h3>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                {post.excerpt}
-              </p>
-              <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                <span className="flex items-center gap-1">
-                  <Calendar className="h-4 w-4" />
-                  {post.date}
-                </span>
-                <span className="flex items-center gap-1">
-                  <Clock className="h-4 w-4" />
-                  {post.readTime}
-                </span>
-              </div>
-            </CardContent>
-          </Card>
+          <Link key={post.id} to={`/blog/${post.id}`}>
+            <Card className="group cursor-pointer transition-all hover:shadow-lg border-border overflow-hidden h-full">
+              <CardHeader>
+                <div className="mb-3">
+                  <Badge variant="secondary" className="font-normal">
+                    {post.category}
+                  </Badge>
+                </div>
+                <h3 className="font-serif text-2xl font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
+                  {post.title}
+                </h3>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  {post.excerpt}
+                </p>
+                <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                  <span className="flex items-center gap-1">
+                    <Calendar className="h-4 w-4" />
+                    {post.date}
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Clock className="h-4 w-4" />
+                    {post.readTime}
+                  </span>
+                </div>
+              </CardContent>
+            </Card>
+          </Link>
         ))}
       </div>
     </div>
