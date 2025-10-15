@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, User, BookOpen, Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import joseHero from "@/assets/jose-hero.jpg";
+import joseHero from "@/assets/Jose-image.jpg";
 
 const Home = () => {
   return (
