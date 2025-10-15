@@ -11,7 +11,6 @@ const Home = () => {
         <div className="grid gap-12 md:grid-cols-2 md:gap-16 items-center">
           <div className="space-y-6">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              Engineer turned data storyteller exploring the world
               Exploring the world and turning curiosity into creation.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
