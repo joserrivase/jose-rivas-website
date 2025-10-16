@@ -202,14 +202,6 @@ const BlogPost = () => {
 
   return (
     <article className="container max-w-4xl py-12 md:py-20">
-      {/* Back Button */}
-      <Link to="/blog" className="inline-block mb-8">
-        <Button variant="ghost" size="sm">
-          <ArrowLeft className="mr-2 h-4 w-4" />
-          Back to Blog
-        </Button>
-      </Link>
-
       {/* Header */}
       <header className="mb-12">
         <Badge variant="secondary" className="mb-4 font-normal">
@@ -311,15 +303,6 @@ const BlogPost = () => {
         )}
       </div>
 
-      {/* Back to Blog */}
-      <div className="mt-16 pt-8 border-t border-border">
-        <Link to="/blog">
-          <Button variant="secondary">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to All Posts
-          </Button>
-        </Link>
-      </div>
     </article>
   );
 };
