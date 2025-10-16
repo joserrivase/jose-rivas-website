@@ -7,30 +7,30 @@ const projects = [
   {
     id: 1,
     name: "Langlio",
-    tagline: "Making language learning social and fun",
+    tagline: "Turning curiosity for languages into an interactive challenge.",
     description: "A platform that connects language learners through real conversations and cultural exchange. Built to solve the problem of finding practice partners who match your level and interests.",
-    impact: "Helped 5,000+ learners practice with native speakers across 40+ languages",
-    skills: ["Product Design", "Data Analysis", "Community Building"],
+    impact: "Reached 1000 views in the first 2 weeks",
+    skills: ["Website Building", "AI", "Data Analysis", "Product Managment", ],
     link: "#",
     icon: Users,
   },
   {
     id: 2,
-    name: "Travel Analytics Dashboard",
-    tagline: "Personal data project tracking global adventures",
+    name: "AI-Powered Listing Improver for Excel",
+    tagline: "Streamlining e-commerce listing enhancement with AI and VBA automation.",
     description: "An interactive visualization of my travels - mapping routes, analyzing spending patterns, and discovering correlations between destinations and experiences. A love letter to both travel and data.",
-    impact: "Revealed surprising insights about budget optimization and travel patterns",
-    skills: ["Data Visualization", "Python", "Storytelling"],
+    impact: "Accelerated the product content improvement process by 70%",
+    skills: ["VBA", "Excel", "AI", "API", "Automation", "E-commerce"],
     link: "#",
     icon: TrendingUp,
   },
   {
     id: 3,
-    name: "Open Source Contributions",
-    tagline: "Contributing to tools I believe in",
+    name: "Automated Document Creator",
+    tagline: "Automating repetitive document generation with the power of VBA and Apps Script",
     description: "Regular contributions to data science and developer tools that make analysis more accessible. Focus on documentation, beginner-friendly features, and community building.",
-    impact: "Contributions used by thousands of developers worldwide",
-    skills: ["Open Source", "Documentation", "Community"],
+    impact: "Reduced repetitive document generation time by 80%",
+    skills: ["VBA", "Excel", "Apps Script", "Google Sheets", "Automation"],
     link: "#",
     icon: Code2,
   },
@@ -45,8 +45,7 @@ const Projects = () => {
           Projects
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl">
-          Data-driven work that combines storytelling, analysis, and meaningful impact. 
-          Each project represents curiosity turned into action.
+          Here are a few projects I have done to scratch my own curiosity, make a process easier, or explore using something new.
         </p>
       </section>
 
