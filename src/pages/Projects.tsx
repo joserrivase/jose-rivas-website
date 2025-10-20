@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Code2, TrendingUp, Users, ArrowRight } from "lucide-react";
+import { ExternalLink, Code2, TrendingUp, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -55,7 +55,8 @@ const Projects = () => {
         {projects.map((project) => {
           const IconComponent = project.icon;
           return (
-            <Card key={project.id} className="border-border overflow-hidden group hover:shadow-lg transition-shadow">
+            <Link key={project.id} to={`/projects/${project.id}`} className="block">
+              <Card className="border-border overflow-hidden group hover:shadow-lg transition-shadow cursor-pointer">
               <CardHeader>
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1">
@@ -96,22 +97,16 @@ const Projects = () => {
                   </p>
                 </div>
 
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2">
                   {project.skills.map((skill) => (
                     <Badge key={skill} variant="secondary" className="font-normal">
                       {skill}
                     </Badge>
                   ))}
                 </div>
-
-                <Link to={`/projects/${project.id}`}>
-                  <Button variant="outline" className="w-full group">
-                    Learn More
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </Link>
               </CardContent>
             </Card>
+            </Link>
           );
         })}
       </div>
