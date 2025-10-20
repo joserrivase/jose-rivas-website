@@ -100,12 +100,6 @@ const ProjectDetail = () => {
             </Button>
           )}
         </div>
-
-        <div className="p-4 bg-accent/10 rounded-lg border border-accent/20 mb-8">
-          <p className="text-sm font-medium text-foreground">
-            <span className="text-accent">Impact:</span> {project.impact}
-          </p>
-        </div>
       </div>
 
       {/* Content Sections */}
