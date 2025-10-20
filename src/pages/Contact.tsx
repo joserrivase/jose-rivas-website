@@ -27,25 +27,25 @@ const Contact = () => {
   const socialLinks = [
     {
       name: "LinkedIn",
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/joserivasespinoza/",
       icon: Linkedin,
       color: "hover:text-[#0077b5]",
     },
     {
       name: "Email",
-      url: "mailto:jose@example.com",
+      url: "mailto:jose.r.rivas.e@gmail.com",
       icon: Mail,
       color: "hover:text-primary",
     },
     {
       name: "Twitter",
-      url: "https://twitter.com",
+      url: "https://x.com/jose_rivas28",
       icon: Twitter,
       color: "hover:text-[#1DA1F2]",
     },
     {
       name: "GitHub",
-      url: "https://github.com",
+      url: "https://github.com/joserrivase",
       icon: Github,
       color: "hover:text-foreground",
     },
