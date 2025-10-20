@@ -10,7 +10,7 @@ const About = () => {
     { city: "Orlando, Florida", country: "USA", period: "2012 - 2018" },
     { city: "Gainesville, Florida", country: "USA", period: "2018 - 2022" },
     { city: "Seattle, Washington", country: "USA", period: "2022 - 2024" },
-    { city: "Abroad", country: "World", period: "2024 - 2024" },
+    { city: "Abroad", country: "World", period: "2024" },
     { city: "Orlando, Florida", country: "USA", period: "2024 - Present" },
   ];
 
