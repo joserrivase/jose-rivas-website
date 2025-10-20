@@ -25,8 +25,8 @@ const About = () => {
   ];
 
   const books = [
-    { title: "Sapiens", author: "Yuval Noah Harari", year: "2024" },
-    { title: "Atomic Habits", author: "James Clear", year: "2023" },
+    { title: "The 4 Hour Work Week", author: "Tim Ferriss", year: "2024" },
+    { title: "The Pathless Path", author: "Paul Millerd", year: "2023" },
     { title: "The Alchemist", author: "Paulo Coelho", year: "2023" },
     { title: "Meditations", author: "Marcus Aurelius", year: "2022" },
   ];
@@ -97,7 +97,7 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  by {book.author} · Read in {book.year}
+                  by {book.author}
                 </p>
               </CardContent>
             </Card>
