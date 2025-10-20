@@ -55,29 +55,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Places Lived */}
-      <section className="mb-16">
-        <div className="flex items-center gap-3 mb-6">
-          <MapPin className="h-6 w-6 text-primary" />
-          <h2 className="font-serif text-3xl font-semibold text-foreground">
-            Places I've Called Home
-          </h2>
-        </div>
-        <div className="grid gap-4 md:grid-cols-3">
-          {places.map((place) => (
-            <Card key={place.city} className="border-border">
-              <CardContent className="pt-6">
-                <h3 className="font-serif text-xl font-semibold mb-1 text-foreground">
-                  {place.city}
-                </h3>
-                <p className="text-sm text-muted-foreground mb-2">{place.country}</p>
-                <p className="text-xs text-muted-foreground">{place.period}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
-
       {/* Travel */}
       <section className="mb-16">
         <div className="flex items-center gap-3 mb-6">
@@ -103,7 +80,7 @@ const About = () => {
       </section>
 
       {/* Books */}
-      <section>
+      <section className="mb-16">
         <div className="flex items-center gap-3 mb-6">
           <Book className="h-6 w-6 text-primary" />
           <h2 className="font-serif text-3xl font-semibold text-foreground">
@@ -125,6 +102,57 @@ const About = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+      </section>
+
+      {/* Places Lived - Timeline */}
+      <section>
+        <div className="flex items-center gap-3 mb-12">
+          <MapPin className="h-6 w-6 text-primary" />
+          <h2 className="font-serif text-3xl font-semibold text-foreground">
+            Places I've Called Home
+          </h2>
+        </div>
+        <div className="relative">
+          {/* Vertical line */}
+          <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-border -translate-x-1/2" />
+          
+          {/* Timeline items */}
+          <div className="space-y-12">
+            {places.map((place, index) => (
+              <div key={`${place.city}-${place.period}`} className="relative">
+                {/* Center dot */}
+                <div className="absolute left-1/2 top-0 w-4 h-4 rounded-full bg-primary border-4 border-background -translate-x-1/2" />
+                
+                {/* Content - alternating left and right */}
+                <div className={`grid grid-cols-2 gap-8 ${index % 2 === 0 ? '' : ''}`}>
+                  {index % 2 === 0 ? (
+                    <>
+                      <div className="text-right pr-12">
+                        <h3 className="font-serif text-xl font-semibold mb-1 text-foreground">
+                          {place.city}
+                        </h3>
+                        <p className="text-sm text-muted-foreground mb-2">{place.country}</p>
+                        <p className="text-xs text-muted-foreground">{place.period}</p>
+                      </div>
+                      <div />
+                    </>
+                  ) : (
+                    <>
+                      <div />
+                      <div className="pl-12">
+                        <h3 className="font-serif text-xl font-semibold mb-1 text-foreground">
+                          {place.city}
+                        </h3>
+                        <p className="text-sm text-muted-foreground mb-2">{place.country}</p>
+                        <p className="text-xs text-muted-foreground">{place.period}</p>
+                      </div>
+                    </>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </div>
