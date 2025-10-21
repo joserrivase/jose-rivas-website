@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const About = () => {
   const places = [
     { city: "Provo, Utah", country: "USA", period: "1999 - 2000" },
-    { city: "San Jose, California", country: "USA", period: "2000-2001" },
+    { city: "Huntingtun Beach, California", country: "USA", period: "2000-2001" },
     { city: "Orlando, Florida", country: "USA", period: "2001 - 2005" },
     { city: "Margarita", country: "Venezuela", period: "2005 - 2012" },
     { city: "Orlando, Florida", country: "USA", period: "2012 - 2018" },
