@@ -40,17 +40,19 @@ const About = () => {
         </h1>
         <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
           <p className="text-lg leading-relaxed">
-            I'm an engineer who fell in love with stories hidden in data. Born in Mexico City, 
-            I've called Madrid and San Francisco home while exploring over 30 countries along the way.
+            Hi, I’m Jose Rivas, a data-driven problem solver who enjoys turning numbers into stories that help teams make smarter decisions. I use data to create insights that guide company decisions in revenue and product strategy.
           </p>
           <p className="text-lg leading-relaxed">
-            My journey has taken me from building technical systems to uncovering insights that 
-            connect people to ideas. I believe the best work happens at the intersection of 
-            curiosity, creativity, and careful analysis.
+            I started my career as a mechanical engineer at Boeing, but over time, I became fascinated with how data and automation can make work faster, smarter, and more creative. That curiosity led me into analytics, where I now focus on using SQL, Excel, VBA, and AI tools to simplify workflows, uncover trends, and build systems that actually help people.
           </p>
           <p className="text-lg leading-relaxed">
-            When I'm not diving into data or building products, you'll find me reading philosophy, 
-            learning languages, or planning my next adventure.
+            What drives me most is learning and building — whether it’s experimenting with AI, automating a spreadsheet, or brainstorming product ideas with a great team. My long-term goal is to build a product of my own while continuing to use data to improve how products perform and grow.
+          </p>
+          <p className="text-lg leading-relaxed">
+            Outside of work, you’ll probably find me traveling, playing the ukulele, reading, or dancing salsa (sometimes all in the same week). I like exploring new places and ideas, and that curiosity shows up in both my work and hobbies.
+          </p>
+          <p className="text-lg leading-relaxed">
+            If you’re into data, AI, or just like sharing ideas about how to make cool things, feel free to reach out!
           </p>
         </div>
       </section>
